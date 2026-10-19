@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ddi6k67uonrvk"
-path="res://.godot/imported/sprite 1.png-261caa233f385db5c2922af8c9bafe25.ctex"
+uid="uid://ogflh5o2q8pw"
+path="res://.godot/imported/sprite 1 idle.png-d9cda617f7a6c3b5560a24505327171e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/sprite 1.png"
-dest_files=["res://.godot/imported/sprite 1.png-261caa233f385db5c2922af8c9bafe25.ctex"]
+source_file="res://Sprites/Warrior/Animations/sprite 1 idle.png"
+dest_files=["res://.godot/imported/sprite 1 idle.png-d9cda617f7a6c3b5560a24505327171e.ctex"]
 
 [params]
 

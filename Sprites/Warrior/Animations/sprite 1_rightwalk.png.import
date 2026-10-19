@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://ogflh5o2q8pw"
-path="res://.godot/imported/sprite 1 idle.png-2e01cef9914e4378ae3813a6d8daa615.ctex"
+uid="uid://2x516clyromw"
+path="res://.godot/imported/sprite 1_rightwalk.png-a0957fdeacf3c608faeaa919608d4109.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/sprite 1 idle.png"
-dest_files=["res://.godot/imported/sprite 1 idle.png-2e01cef9914e4378ae3813a6d8daa615.ctex"]
+source_file="res://Sprites/Warrior/Animations/sprite 1_rightwalk.png"
+dest_files=["res://.godot/imported/sprite 1_rightwalk.png-a0957fdeacf3c608faeaa919608d4109.ctex"]
 
 [params]
 
