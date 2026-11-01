@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bggpitt3grpx0"
-path="res://.godot/imported/tilemap grasslands.png-3bb9906eaf02311dac768c474de8302b.ctex"
+uid="uid://dorfgltwgrybt"
+path="res://.godot/imported/tilemap grasslands_2.png-028d5a439dcf43295f572f801723505a.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Map/tilemap grasslands.png"
-dest_files=["res://.godot/imported/tilemap grasslands.png-3bb9906eaf02311dac768c474de8302b.ctex"]
+source_file="res://Map/tilemap grasslands_2.png"
+dest_files=["res://.godot/imported/tilemap grasslands_2.png-028d5a439dcf43295f572f801723505a.ctex"]
 
 [params]
 
