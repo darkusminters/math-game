@@ -1,0 +1,42 @@
+[gd_scene format=3 uid="uid://t0cu5v3ap2jw"]
+
+[ext_resource type="Script" uid="uid://bh4dglwc75xwu" path="res://character_body_2d.gd" id="1_l4nop"]
+[ext_resource type="Texture2D" uid="uid://btlgew4uv3cgy" path="res://Sprites/Pretinieki/pretnieks1.png" id="2_oyxi0"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ol6h0"]
+atlas = ExtResource("2_oyxi0")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_8cnpf"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ol6h0")
+}],
+"loop": 1,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8lgum"]
+radius = 13.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_8cnpf"]
+size = Vector2(81, 54)
+
+[node name="Node2D" type="Node2D" unique_id=161268178]
+
+[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=1521201256]
+script = ExtResource("1_l4nop")
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="CharacterBody2D" unique_id=1646588303]
+sprite_frames = SubResource("SpriteFrames_8cnpf")
+animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=470769012]
+shape = SubResource("CircleShape2D_8lgum")
+
+[node name="Area2D" type="Area2D" parent="CharacterBody2D" unique_id=2025173060]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D/Area2D" unique_id=885442549]
+shape = SubResource("RectangleShape2D_8cnpf")
