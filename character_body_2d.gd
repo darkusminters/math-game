@@ -3,7 +3,6 @@ extends CharacterBody2D
 
 @export var speed: float = 45
 
-
 # Automatically grab a reference to your AnimatedSprite2D node
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 

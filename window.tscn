@@ -1,10 +1,40 @@
 [gd_scene format=3 uid="uid://c3yr20p17qb1"]
 
-[node name="Camera2D" type="Camera2D" unique_id=1077707706]
+[ext_resource type="Script" uid="uid://puvd8oeiid3j" path="res://window.gd" id="1_mvsta"]
 
-[node name="Window" type="Window" parent="." unique_id=979483674]
+[node name="Popup" type="Camera2D" unique_id=1771798651]
+process_mode = 3
+
+[node name="Window" type="Window" parent="." unique_id=1481793018]
+transparent_bg = true
 oversampling_override = 1.0
-title = "MATH"
 initial_position = 1
+size = Vector2i(200, 60)
+always_on_top = true
+transparent = true
+script = ExtResource("1_mvsta")
 
-[node name="Camera2D" type="Camera2D" parent="Window" unique_id=1141005533]
+[node name="Label" type="Label" parent="Window" unique_id=456604001]
+offset_left = 2.0
+offset_right = 111.0
+offset_bottom = 24.0
+text = "_ + 3 = 7"
+horizontal_alignment = 1
+
+[node name="LineEdit" type="LineEdit" parent="Window" unique_id=1857644572]
+offset_left = 20.0
+offset_top = 27.0
+offset_right = 88.5
+offset_bottom = 58.0
+alignment = 1
+
+[node name="Button" type="Button" parent="Window" unique_id=1734080265]
+offset_left = 116.0
+offset_top = 28.0
+offset_right = 190.0
+offset_bottom = 59.0
+text = "PABEIGT"
+
+[connection signal="about_to_popup" from="Window" to="Window" method="_on_about_to_popup"]
+[connection signal="close_requested" from="Window" to="Window" method="_on_close_requested"]
+[connection signal="pressed" from="Window/Button" to="Window" method="_on_button_pressed"]

@@ -134,4 +134,7 @@ position = Vector2(680, 245)
 position = Vector2(733, 247)
 scale = Vector2(0.395, 0.395)
 
-[node name="Window" parent="." unique_id=979483674 instance=ExtResource("6_kdubu")]
+[node name="Popup" parent="." unique_id=1771798651 instance=ExtResource("6_kdubu")]
+position = Vector2(627, 245)
+
+[connection signal="start_math_battle" from="Enemy2D" to="." method="_on_enemy_2d_start_math_battle"]
