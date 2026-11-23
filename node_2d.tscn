@@ -5,6 +5,7 @@
 [ext_resource type="Script" uid="uid://qxcp2l6sl7q" path="res://node_2d.gd" id="1_q6r6c"]
 [ext_resource type="PackedScene" uid="uid://h6gckadj37sk" path="res://main.tscn" id="3_0hol4"]
 [ext_resource type="PackedScene" uid="uid://d3yiphalxuk0x" path="res://pretinieks.tscn" id="5_q6r6c"]
+[ext_resource type="PackedScene" uid="uid://c3yr20p17qb1" path="res://window.tscn" id="6_kdubu"]
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_rj586"]
 texture = ExtResource("1_d21ai")
@@ -127,9 +128,10 @@ tile_map_data = PackedByteArray("AAAiAAwAAwAHAAEAAAAiAA0AAwAHAAEAAAAiAA4AAwAHAAE
 tile_set = SubResource("TileSet_8lgum")
 
 [node name="player" parent="." unique_id=614605741 instance=ExtResource("3_0hol4")]
-visible = true
 position = Vector2(680, 245)
 
 [node name="Enemy2D" parent="." unique_id=1128578531 instance=ExtResource("5_q6r6c")]
 position = Vector2(733, 247)
 scale = Vector2(0.395, 0.395)
+
+[node name="Window" parent="." unique_id=979483674 instance=ExtResource("6_kdubu")]

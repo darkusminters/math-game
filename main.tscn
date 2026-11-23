@@ -132,7 +132,6 @@ radius = 3.0
 height = 10.0
 
 [node name="player" type="CharacterBody2D" unique_id=614605741]
-visible = false
 y_sort_enabled = true
 script = ExtResource("1_lquwl")
 
