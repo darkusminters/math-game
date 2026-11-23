@@ -2,12 +2,18 @@
 extends CharacterBody2D
 
 @export var speed: float = 45
-
+var can_move: bool = true
 # Automatically grab a reference to your AnimatedSprite2D node
 @onready var animated_sprite: AnimatedSprite2D = $AnimatedSprite2D
 
+func _ready() -> void:
+	add_to_group("player")
+
 func _physics_process(_delta: float) -> void:
-	# Store the input direction vector directly so it's accessible here
+	if not can_move:
+		velocity = Vector2.ZERO
+		animated_sprite.play("Idle")
+		return
 	var current_direction = get_input()
 	move_and_slide()
 	update_animation(current_direction)

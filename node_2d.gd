@@ -22,7 +22,7 @@ func _ready() -> void:
 # BATTLE START -> CENTER & ZOOM -> POPUP
 func _on_enemy_2d_start_math_battle(enemy: Node2D) -> void:
 	current_enemy = enemy
-	
+	player.can_move = true
 	# Turn off camera drag so it doesn't fight our centering animation
 	camera.drag_horizontal_enabled = false
 	camera.drag_vertical_enabled = false
@@ -54,9 +54,8 @@ func _on_math_solved() -> void:
 	# Turn your camera drag back on
 	camera.drag_horizontal_enabled = true
 	camera.drag_vertical_enabled = true
-	
+	player.can_move = true
 	if current_enemy != null:
 		current_enemy.queue_free()
 		current_enemy = null
 	
-	get_tree().paused = false

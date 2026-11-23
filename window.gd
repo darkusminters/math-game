@@ -13,9 +13,3 @@ func _on_button_pressed() -> void:
 		# Optional: give feedback if they got it wrong
 		line_edit.clear()
 		line_edit.placeholder_text = "Try again!"
-
-func _on_about_to_popup() -> void:
-	pass # Replace with function body.
-
-func _on_close_requested() -> void:
-	pass # Replace with function body.
